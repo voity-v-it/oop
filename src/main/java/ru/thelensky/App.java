@@ -13,5 +13,8 @@ public class App
         vasiliy.id = 1;
         vasiliy.name = "Василий";
         System.out.println( vasiliy.name + " " + vasiliy.id );
+
+        mployees timofey = new Employees(2, "Тимофей");
+        System.out.println( timofey.name + " " + timofey.id );
     }
 }

@@ -7,4 +7,9 @@ public class Employees {
     public Employees(){
         //Конструктор по умолчанию.
     }
+
+    public Employees(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

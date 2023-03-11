@@ -1,20 +1,23 @@
 package ru.thelensky;
 
-import staff.Employees;
-
 /**
  * Hello world!
  *
  */
 public class App {
     public static void main(String[] args) {
-        Employees vasiliy = new Employees("Василий");
-        System.out.println(vasiliy.name + " " + vasiliy.getId());
 
-        Employees timofey = new Employees("Тимофей");
-        System.out.println(timofey.name + " " + timofey.getId());
+        String str = "ПриМвет Мир!";
+        int index = str.indexOf('М');
+        System.out.println(index);
 
-        Employees alisa = new Employees("Алиса");
-        System.out.println(alisa.name + " " + alisa.getId());
+        int lastIndexOf = str.lastIndexOf('М');
+        System.out.println(lastIndexOf);
+
+        // int uIndex= new StringUtils().indexOf(str, 'М');
+        // System.out.println(uIndex);
+
+
+
     }
 }

@@ -11,6 +11,7 @@ public class App {
 
         PrinterNumber printerNumber = new PrinterNumber();
         printerNumber.printNumber(PrinterNumber.FIFE);
+        printerNumber.printNumberFromString("78");
 
     }
 }

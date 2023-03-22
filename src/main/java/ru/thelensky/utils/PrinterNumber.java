@@ -106,11 +106,12 @@ public class PrinterNumber {
         //получение из строки массива с цифрами тип int (конец)
 
         //Распечатка (начало)
-        for (int i = 0; i < NUMBERS[0].length; i++) {
-            for (int j = 0; j < numbers.length; j++) {
+        for (int i = 0; i < NUMBERS[0].length; i++) {//Голубой цикл
+            for (int j = 0; j < numbers.length; j++) {//Оранжевый цикл
                 int indexNumber = numbers[j];
-                for (int k = 0; k < NUMBERS[0][0].length; k++) {
-                    System.out.print(NUMBERS[indexNumber][i][k]);
+                for (int k = 0; k < NUMBERS[0][0].length; k++) {//Зеленый цикл
+                        System.out.print(NUMBERS[indexNumber][i][k]);
+                    }
                 }
             }
             System.out.println();

@@ -1,6 +1,6 @@
 package ru.thelensky;
 
-import staff.Employees;
+import ru.thelensky.utils.PrinterNumber;
 
 /**
  * Hello world!
@@ -8,13 +8,10 @@ import staff.Employees;
  */
 public class App {
     public static void main(String[] args) {
-        Employees vasiliy = new Employees("Василий");
-        System.out.println(vasiliy.name + " " + vasiliy.getId());
 
-        Employees timofey = new Employees("Тимофей");
-        System.out.println(timofey.name + " " + timofey.getId());
+        PrinterNumber printerNumber = new PrinterNumber();
+        printerNumber.printNumber(PrinterNumber.FIFE);
+        printerNumber.printNumberFromString("78");
 
-        Employees alisa = new Employees("Алиса");
-        System.out.println(alisa.name + " " + alisa.getId());
     }
 }

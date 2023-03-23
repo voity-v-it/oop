@@ -24,7 +24,5 @@ public class StringUtils {
         return -1;
     }
     
-    public int lastIndexOf(String str, char ch){
-        return 0;
-    }
+
 }

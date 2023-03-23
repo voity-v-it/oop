@@ -92,30 +92,29 @@ public class PrinterNumber {
         }
     }
 
-    public void printNumberFromString (String str){
-        //получение из строки массива с цифрами тип int (начало)
+    public void printNumberFromString(String str) {
+        // получение из строки массива с цифрами тип int (начало)
         char[] charArray = str.toCharArray();
         int[] numbers = new int[charArray.length];// <- вот он!!!
-        
+
         for (int i = 0; i < numbers.length; i++) {
             char charNumber = charArray[i];
             String stringNumber = String.valueOf(charNumber);
             int number = Integer.parseInt(stringNumber);
             numbers[i] = number;
         }
-        //получение из строки массива с цифрами тип int (конец)
+        // получение из строки массива с цифрами тип int (конец)
 
-        //Распечатка (начало)
-        for (int i = 0; i < NUMBERS[0].length; i++) {//Голубой цикл
-            for (int j = 0; j < numbers.length; j++) {//Оранжевый цикл
+        // Распечатка (начало)
+        for (int i = 0; i < NUMBERS[0].length; i++) {// Голубой цикл
+            for (int j = 0; j < numbers.length; j++) {// Оранжевый цикл
                 int indexNumber = numbers[j];
-                for (int k = 0; k < NUMBERS[0][0].length; k++) {//Зеленый цикл
-                        System.out.print(NUMBERS[indexNumber][i][k]);
-                    }
+                for (int k = 0; k < NUMBERS[0][0].length; k++) {// Зеленый цикл
+                    System.out.print(NUMBERS[indexNumber][i][k]);
                 }
             }
             System.out.println();
         }
-        //Распечатка (конец)
     }
+    // Распечатка (конец)
 }

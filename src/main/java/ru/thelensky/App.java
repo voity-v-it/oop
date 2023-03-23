@@ -10,8 +10,8 @@ public class App {
     public static void main(String[] args) {
 
         PrinterNumber printerNumber = new PrinterNumber();
-        printerNumber.printNumber(PrinterNumber.FIFE);
-        printerNumber.printNumberFromString("78");
+        // printerNumber.printNumber(PrinterNumber.FIFE);
+        printerNumber.printNumberFromString(args[0]);
 
     }
 }

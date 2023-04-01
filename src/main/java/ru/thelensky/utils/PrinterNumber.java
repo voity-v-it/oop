@@ -115,6 +115,10 @@ public class PrinterNumber {
             }
             System.out.println();
         }
+        // Распечатка (конец)
     }
-    // Распечатка (конец)
+
+    public int sum(int x, int y){
+        return x + y;
+    }
 }

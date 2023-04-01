@@ -115,6 +115,7 @@ public class PrinterNumber {
             }
             System.out.println();
         }
+
         // Распечатка (конец)
     }
 

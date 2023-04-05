@@ -110,8 +110,17 @@ public class PrinterNumber {
             for (int j = 0; j < numbers.length; j++) {// Оранжевый цикл
                 int indexNumber = numbers[j];
                 for (int k = 0; k < NUMBERS[0][0].length; k++) {// Зеленый цикл
-                    System.out.print(NUMBERS[indexNumber][i][k]);
+
+
+                    // Замена символа
+                    if(NUMBERS[indexNumber][i][k] == '*'){
+                        System.out.print(indexNumber);
+                    } else {
+                        System.out.print(NUMBERS[indexNumber][i][k]);
+                    }
+
                 }
+                System.out.print(" | ");// пробел между цифрами
             }
             System.out.println();
         }
@@ -119,7 +128,7 @@ public class PrinterNumber {
         // Распечатка (конец)
     }
 
-    public int sum(int x, int y){
+    public int sum(int x, int y) {
         return x + y;
     }
 }

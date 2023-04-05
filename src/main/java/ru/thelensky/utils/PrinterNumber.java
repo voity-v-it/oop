@@ -109,17 +109,8 @@ public class PrinterNumber {
         for (int i = 0; i < NUMBERS[0].length; i++) {// Голубой цикл
             for (int j = 0; j < numbers.length; j++) {// Оранжевый цикл
                 int indexNumber = numbers[j];
-                for (int k = 0; k < NUMBERS[0][0].length; k++) {// Зеленый цикл
-
-
-                    // Замена символа
-                    if(NUMBERS[indexNumber][i][k] == '*'){
-                        System.out.print(indexNumber);
-                    } else {
-                        System.out.print(NUMBERS[indexNumber][i][k]);
-                    }
-
-                }
+                char[] s = NUMBERS[indexNumber][i]; // получаем так называемую шапку. например { ' ', '*', '*', ' ' }
+                System.out.print(s); // объект String в себе содержит массив с символами поэтому передача s работает
                 System.out.print(" | ");// пробел между цифрами
             }
             System.out.println();

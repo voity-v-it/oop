@@ -109,8 +109,17 @@ public class PrinterNumber {
         for (int i = 0; i < NUMBERS[0].length; i++) {// Голубой цикл
             for (int j = 0; j < numbers.length; j++) {// Оранжевый цикл
                 int indexNumber = numbers[j];
-                char[] s = NUMBERS[indexNumber][i]; // получаем так называемую шапку. например { ' ', '*', '*', ' ' }
-                System.out.print(s); // объект String в себе содержит массив с символами поэтому передача s работает
+                char[] charsArray = NUMBERS[indexNumber][i]; // получаем так называемую шапку. например { ' ', '*', '*', ' ' }
+                
+                // чтобы работать с методами String надо явно преобразовать char[] в строку
+                String s = String.valueOf(charsArray);
+
+                // метод replace (рерлейс) заменяет подстроку в строке. В данном случае заменяет все символы в строке  т.к. символ * один. 
+                // ** - работать как ожидается не будет
+                // замете как мы предаем вызов функции как аргумент другой функции.
+                s = s.replace("*", String.valueOf(indexNumber)); 
+
+                System.out.print(s);
                 System.out.print(" | ");// пробел между цифрами
             }
             System.out.println();
